@@ -1,0 +1,784 @@
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+:disabled {
+	opacity: .5;
+}
+
+.hangingindent {
+  padding-left: 22px ;
+  text-indent: -22px ;
+}
+
+.aleft, .left, .aLeft {
+  text-align: left !important;
+}
+
+.aright, .right, .aRight {
+  text-align: right !important;
+}
+
+.acenter, .center, .aCenter {
+  text-align: center !important;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.centered { 
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); 
+  -moz-transform: translate(-50%, -50%); 
+  -webkit-transform: translate(-50%, -50%); 
+}
+
+.bottomright { 
+  position: fixed; 
+  bottom: 20px; 
+  right: 40px; 
+}
+
+.clearall, .clearBoth {
+  clear: both;
+}
+
+.clearLeft {
+  clear: left;
+}
+
+.clearRight {
+  clear: right;
+}
+
+.fixit {
+  position: fixed !important;
+}
+
+.fleft, .fLeft {
+  float: left;
+}
+
+.fright, .fRight {
+  float: right;
+}
+
+.full {
+  width: 100%;
+}
+
+.half {
+  width: 50%;
+}
+
+.third {
+  width: 33%;
+}
+
+.ghost {
+  visibility: hidden;
+}
+
+.hide, .remove , .vanish {
+  display: none;
+  visibility: hidden;
+}
+
+.nobr {
+  white-space: nowrap;
+}
+
+.noul, .nou, .nounder {
+  text-decoration: none;
+}
+
+/* TABLES */
+table.partit {
+	border-collapse: separate; 
+	border-spacing: 3px;
+}
+
+/* MARGINS & PADDING */
+
+ol.spaceit li, ul.spaceit li {
+	margin-bottom: 4px;
+	padding-bottom: 4px;
+}
+
+li { 
+	break-after: auto;
+	break-before: auto;
+	break-inside: avoid;
+}
+
+.notopbot {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.nobottommargin, .nobottommar {
+  margin-bottom: 0 !important;
+}
+
+.noleftmargin, .noleftmar {
+  margin-left: 0 !important;
+}
+
+.norightmargin, .norightmar {
+  margin-right: 0 !important;
+}
+
+.notopmargin, .notopmar {
+  margin-top: 0 !important;
+}
+
+.nomargin, .nomar {
+  margin: 0 !important;
+}
+
+.nobottompadding, .nobottompad {
+  padding-bottom: 0 !important;
+}
+
+.noleftpadding, .noleftpad {
+  padding-left: 0 !important;
+}
+
+.norightpadding, .norightpad {
+  padding-right: 0 !important;
+}
+
+.notoppadding, .notoppad {
+  padding-top: 0 !important;
+}
+
+.nopad {
+  padding: 0 !important;
+}
+
+.op75 {
+  opacity: .75;
+}
+
+.op50 {
+  opacity: .50;
+}
+
+.op25 {
+  opacity: .25;
+}
+
+.pad5 { 
+  padding: 5px;
+}
+
+.pad10 { 
+  padding: 10px;
+}
+
+.pad15 { 
+  padding: 15px;
+}
+
+.pad20 { 
+  padding: 20px;
+}
+
+.pad25 { 
+  padding: 25px;
+}
+
+.padBot1 {
+  margin-bottom: 1em;
+}
+
+.padLeft1 {
+  margin-left: 1em;
+}
+
+.padRight1 {
+  margin-right: 1em;
+}
+
+.padTop1 {
+  margin-top: 1em;
+}
+
+.padBot5 {
+  margin-bottom: 0.5em;
+}
+
+.padLeft5 {
+  margin-left: 0.5em;
+}
+
+.padRight5 {
+  margin-right: 0.5em;
+}
+
+.padTop5 {
+  margin-top: 0.5em;
+}
+
+.padBotP25 {
+  margin-bottom: 0.25em;
+}
+
+.padLeftP25 {
+  margin-left: 0.25em;
+}
+
+.padRightP25 {
+  margin-right: 0.25em;
+}
+
+.padTopP25 {
+  margin-top: 0.25em;
+}
+
+/* OPACITY */
+
+.op9 {
+	opacity: .9;
+}
+
+.op8 {
+	opacity: .8;
+}
+
+.op7 {
+	opacity: .7;
+}
+
+.op6 {
+	opacity: .6;
+}
+
+.op5 {
+	opacity: .5;
+}
+
+.op4 {
+	opacity: .4;
+}
+
+.op3 {
+	opacity: .3;
+}
+
+.op2 {
+	opacity: .2;
+}
+
+.op1 {
+	opacity: .1;
+}
+
+/* PRINT */
+
+#printonly, .printonly, #printonlyinline, .printonlyinline, #foldit, .foldit {
+  display: none;
+  visibility: collapse;
+}
+
+/* COLUMNS */
+.autoflexcolumns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -ms-column-count: 2;
+  -o-column-count: 2;
+  column-count: 2;
+}
+
+.autoflexcolumnsCOND {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -ms-column-count: 2;
+  -o-column-count: 2;
+  column-count: 2;
+}
+
+.autoflexcolumnsTHIN {
+  -webkit-column-count: 6;
+  -moz-column-count: 6;
+  -ms-column-count: 6;
+  -o-column-count: 6;
+  column-count: 6;
+}
+
+.autoflexcolumns div.box, .autoflexcolumnsCOND div.box, .autoflexcolumnsTHIN div.box {
+	display: inline-block;
+	min-width: 90%;
+	width: 100%;
+}
+
+h1, h2, p {
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  -ms-column-span: all;
+  -o-column-span: all;
+  column-span: all;
+}
+
+/* COLORS */
+
+.BGblack {
+  background-color: #111;
+}
+
+.BGblue {
+  background-color: blue;
+}
+
+.BGdarkblue {
+  background-color: darkblue;
+}
+
+.BGdarkred {
+  background-color: darkred;
+}
+
+.BGdarkgreen {
+  background-color: darkgreen;
+}
+
+.BGgreen {
+  background-color: green;
+}
+
+.BGlightblue {
+  background-color: lightblue;
+}
+
+.BGlightgreen {
+  background-color: lightgreen;
+}
+
+.BGorange {
+  background-color: orange;
+}
+
+.BGpink {
+  background-color: pink;
+}
+
+.BGred {
+  background-color: red;
+}
+
+.BGyellow {
+  background-color: yellow;
+}
+
+.BGwhite {
+  background-color: #fff;
+}
+
+.black {
+  color: #111;
+}
+
+.blue {
+  color: blue;
+}
+
+.darkblue {
+  color: darkblue;
+}
+
+.darkred {
+  color: darkred;
+}
+
+.darkgreen {
+  color: darkgreen;
+}
+
+.green {
+  color: green;
+}
+
+.lightblue {
+  color: lightblue;
+}
+
+.lightgreen {
+  color: lightgreen;
+}
+
+.orange {
+  color: orange;
+}
+
+.pink {
+  color: pink;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.fixedyellow {
+  color: #F0E492;
+}
+
+.overrideyellow .yellow {
+  color: #F0E492 !important;
+}
+
+.white {
+  color: #fff;
+}
+
+/* HR's */
+
+hr.style-one { border: 0; height: 1px; background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc); }
+
+hr.style-two { border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); }
+
+hr.style-three { border: 0; border-bottom: 1px dashed #ccc; background: #999; }
+
+hr.style-four { height: 12px; border: 0; box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5); }
+
+hr.style-five { border: 0; height: 0; /* Firefox... */ box-shadow: 0 0 10px 1px black; } 
+hr.style-five:after { content: "\00a0"; /* Prevent margin collapse */ }
+
+hr.style-six { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+hr.style-seven { height: 30px; border-style: solid; border-color: black; border-width: 1px 0 0 0; border-radius: 20px; } 
+hr.style-seven:before { display: block; content: ""; height: 30px; margin-top: -31px; border-style: solid; border-color: black; border-width: 0 0 1px 0; border-radius: 20px; }
+
+hr.style-eight { padding: 0; border: none; border-top: medium double #333; color: #333; text-align: center; } 
+hr.style-eight:after { content: "§"; display: inline-block; position: relative; top: -0.85em; font-size: 1.3em; padding: 0 0.25em; background: #546147; color: #333; }
+
+hr { margin-bottom: 1.5em; }
+
+/* ANIMATIONS */
+
+.blink {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0.0; }
+}
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* HIRES DESKTOP */
+@media screen and (min-width: 1801px) and (max-width: 6000px){
+	.autoflexcolumns {
+	  -webkit-column-count: 4;
+	  -moz-column-count: 4;
+	  -ms-column-count: 4;
+	  -o-column-count: 4;
+	  column-count: 4;
+	}
+
+	.autoflexcolumnsTHIN {
+	  -webkit-column-count: 12;
+	  -moz-column-count: 12;
+	  -ms-column-count: 12;
+	  -o-column-count: 12;
+	  column-count: 12;
+	}
+	
+	.autosize {
+		font-size: 1.25em;
+	}
+}
+
+/* LARGE DESKTOP */
+@media screen and (min-width: 1250px) and (max-width: 1800px){
+	.autoflexcolumns {
+	  -webkit-column-count: 3;
+	  -moz-column-count: 3;
+	  -ms-column-count: 3;
+	  -o-column-count: 3;
+	  column-count: 3;
+	}
+
+	.autoflexcolumnsTHIN {
+	  -webkit-column-count: 10;
+	  -moz-column-count: 10;
+	  -ms-column-count: 10;
+	  -o-column-count: 10;
+	  column-count: 10;
+	}
+	
+	.autosize {
+		font-size: 1.25em;
+	}
+}
+
+/* DEFAULT */
+@media screen and (min-width: 981px) and (max-width: 1249px){	
+}
+
+/* TABLET PORTRAIT */
+@media screen and (min-width: 768px) and (max-width: 980px){	
+	.autoflexcolumns {
+	  -webkit-column-count: 2;
+	  -moz-column-count: 2;
+	  -ms-column-count: 2;
+	  -o-column-count: 2;
+	  column-count: 2;
+	}
+	
+	.autoflexcolumnsCOND {
+	  -webkit-column-count: 1;
+	  -moz-column-count: 1;
+	  -ms-column-count: 1;
+	  -o-column-count: 1;
+	  column-count: 1;
+	}
+
+	.autoflexcolumnsTHIN {
+	  -webkit-column-count: 4;
+	  -moz-column-count: 4;
+	  -ms-column-count: 4;
+	  -o-column-count: 4;
+	  column-count: 4;
+	}
+}
+
+/* HANDHELD LANDSCAPE */
+@media screen and (min-width: 480px) and (max-width: 767px){
+	.autoflexcolumns {
+	  -webkit-column-count: 1;
+	  -moz-column-count: 1;
+	  -ms-column-count: 1;
+	  -o-column-count: 1;
+	  column-count: 1;
+	}
+
+	.autoflexcolumnsCOND {
+	  -webkit-column-count: 1;
+	  -moz-column-count: 1;
+	  -ms-column-count: 1;
+	  -o-column-count: 1;
+	  column-count: 1;
+	}	
+
+	.autoflexcolumnsTHIN {
+	  -webkit-column-count: 3;
+	  -moz-column-count: 3;
+	  -ms-column-count: 3;
+	  -o-column-count: 3;
+	  column-count: 3;
+	}
+	
+	.autosize {
+		font-size: .75em;
+	}
+}
+
+/* HANDHELD PORTRAIT */
+@media screen and (min-width: 0px) and (max-width: 479px){
+	.autoflexcolumns {
+	  -webkit-column-count: 1;
+	  -moz-column-count: 1;
+	  -ms-column-count: 1;
+	  -o-column-count: 1;
+	  column-count: 1;
+	}
+
+	.autoflexcolumnsCOND {
+	  -webkit-column-count: 1;
+	  -moz-column-count: 1;
+	  -ms-column-count: 1;
+	  -o-column-count: 1;
+	  column-count: 1;
+	}	
+
+	.autoflexcolumnsTHIN {
+	  -webkit-column-count: 2;
+	  -moz-column-count: 2;
+	  -ms-column-count: 2;
+	  -o-column-count: 2;
+	  column-count: 2;
+	}
+	
+	.autosize {
+		font-size: .75em;
+	}
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

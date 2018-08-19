@@ -1,0 +1,206 @@
+/*
+#wrapper {
+	width: 100%;
+}
+*/
+
+#mueller-indicators {
+  display: none;
+  visibility: hidden;
+}
+
+a:link:after, a:visited:after { content: ""; }
+
+#printonly {
+  display: block;
+  visibility: visible;
+}
+
+.printonly {
+  display: block;
+  visibility: visible;
+}
+
+#printonlyinline {
+  display: inline-block;
+  visibility: visible;
+}
+
+.printonlyinline {
+  display: inline-block;
+  visibility: visible;
+}
+
+tr.printonly {
+  display: table-row;
+  visibility: visible;
+}
+
+#noprint {
+  display: none;
+  visibility: collapse;
+}
+
+.noprint {
+  display: none;
+  visibility: collapse;
+}
+
+#poster_in, .navbg, #navfloat, #featuredCamA, .allFeaturedArea, .quickresources, .allFeaturedCam, #footnav, .shadow, .officephoto {
+  display: none;
+  visibility: collapse;
+}
+
+#wrapper {
+  width: 100% !important;
+  margin-right: 0 !important;
+  float: none !important;
+  clear: both !important;
+}
+
+.floatSide {
+}
+
+h1.main_in {
+	margin-top: 5px !important;
+}
+
+.customized {
+	border: 3px double #000;
+}
+
+div.reverse h4, h4 { 
+	border-bottom: 3px solid #000000;
+}
+
+div.box {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+h4 {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+div.campprofileBG, div.campprofileCONTB {
+	border-bottom: none;
+}
+
+div.campprofileCONT h1 {
+	font-size: 2em;
+}
+
+div.campprofileCONT h2 {
+	font-size: 3em;
+}
+
+div.vidwin {
+	margin-bottom: 0 !important;
+}
+
+div.tab { display: none; visibility: collapse; margin: 0; }
+.tabcontent { display: block !important; page-break-before: always; margin-bottom: 0; }
+.tabcontent h4 { display: block; visibility: visible; border-bottom: 3px solid #000000; font-size: 4em; }
+
+th { border-bottom: 3px solid #000000; }
+
+#campusMain h4 { text-align: left; padding-left: 0; font-size: 1.5em; }
+/* #campusMain h4:nth-of-type(2), #campusMain h4:nth-of-type(3), #campusMain h4:nth-of-type(4) { padding-top: 20px; } */
+#campusSide h4 { border: none; margin-bottom: 0; font-size: 1.5em; }
+#campusSide h4 + center > div { margin-bottom: 5px; }
+
+table.report td { font-size: 9px; }
+table.report td a { text-decoration: none; }
+table.report thead td { padding: 0; border-bottom: 1px dotted #000000; }
+table.report tbody td { padding: 0; }
+
+h1.memcam { margin: 0; position: static; }
+#poster_memcam { padding: 0; }
+#poster_memcam select { border: none; border-bottom: 1px solid #cecece; }
+#memcamLeft { width: 100%; float: none; height: auto; overflow: visible; }
+#memcamRight { display: none; visibility: collapse; }
+h4.country { padding-top: 20px; }
+
+mark { background: none; font-style: inherit; font-weight: inherit; text-decoration: inherit; }
+div.dc { border-left: 1px dotted #000; padding-top: 0; padding-bottom: 0; height: auto; }
+div.dc-campusname { text-align: right; padding-top: 0; padding-bottom: 0; margin-top: 0; margin-bottom: 0; }
+div.dc-profile { text-align: right; padding-top: 0; padding-bottom: 0; height: auto; clear: left; }
+div.nocoordphoto { padding-left: 0; }
+div.dc-coord { height: auto; }
+#textcheck { border: none; border-bottom: 1px solid #000; }
+
+
+
+/* PLACEMENTS */
+
+body.placements {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+body.placements .logofix {
+	margin-bottom: 15px;
+}
+
+body.placements div.c-1 {
+  width: 100% !important;
+  float: none !important;
+  clear: both !important; 
+  margin-left: 0 !important; 
+  margin-right: 0 !important; 
+}
+
+body.placements div.c-2 {
+  display: none !important;
+  visibility: collapse !important;
+  width: 0 !important;
+  float: none !important;
+  clear: both !important; 
+  margin-left: 0 !important; 
+  margin-right: 0 !important; 
+}
+
+div.rosth {
+	border-bottom: 1px dotted #000;
+}
+
+.ui-tooltip {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+table.roster td.thead, table.roster td.tfoot {
+	border-color: #000;
+}
+
+.pl_readonly .pl_school, .pl_readonly .pl_plan, .pl_readonly .pl_time, .pl_readonly .pl_house, .pl_readonly .pl_major, .pl_readonly div.formRight {
+	border-color: #000;
+}
+
+#pl_ps tbody th {
+	display: none;
+	visibility: collapse;
+}
+
+#pl_ps, #pl_ps tbody td {
+	border-left: none;
+	border-right: none;
+}
+
+#pl_md_choices {
+	width: 100% !important;
+	height: auto !important;
+	overflow: visible !important;
+}
+
+#plhead th {
+	border-bottom: 2px solid #000 !important;
+	text-align: left;
+}
+
+#plrow td {
+	border-top: 2px solid #000 !important;
+	text-align: left;
+	vertical-align: bottom;
+}

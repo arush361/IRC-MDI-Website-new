@@ -1,0 +1,451 @@
+/* GENERAL FORMATTING */
+
+#theform {
+	display: none;
+}
+
+#togform {
+	cursor: pointer;
+}
+
+.formFull {
+  width: 99% !important;
+}
+
+div.form input, div.form select, div.form textarea {
+  color: #333;
+}
+
+div.form {
+  width: 49%;
+  margin-right: 2%;
+  float: left;
+  margin-bottom: 2px;
+}
+
+div.formHolder {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+div.formLeft {
+  width: 43%;
+  margin-right: 1%;
+  float: left;
+  background: url("../img/bg-form.png") no-repeat right;
+  font-weight: bold;
+}
+
+div.formRight {
+  width: 56%;
+  float: left;
+  /* border: 1px solid #cecece; */
+  background-color: #e9e9e9;
+}
+
+div.formRightTxt {
+  background-color: transparent;
+  box-sizing: border-box;
+  padding-left: 10px;
+  border-left: 1px solid #999;
+  color: #343B4B;
+}
+
+div.formRight input {
+  width: 95%;
+  margin: 0 0 0 2%;
+  padding: 0;
+  background: transparent;  
+  display: inline-block;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  outline:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  -o-appearance:none;
+  appearance:none;
+}
+
+div.formRight select {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: transparent;  
+  display: inline-block;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  outline:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  -o-appearance:none;
+  appearance:none;
+}
+
+div.formRight textarea {
+  width: 98%;
+  margin: 3px 0 0 2%;
+  padding: 0;
+  background: transparent;  
+  display: inline-block;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  outline:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  -o-appearance:none;
+  appearance:none;
+  height: 50px;
+}
+
+div.formRight input:disabled, div.formRight select:disabled, div.formRight textarea:disabled {
+  /* background: url("img/bg-disabled.png") repeat right #cecece; */
+  color: #999;
+}
+
+button.submit, input.submit {
+  width: 100%;
+}
+
+.disabled {
+  background: url("img/bg-disabled.png") repeat right #e9e9e9 !important;
+}
+
+.styledSelect {
+  background: url("img/bg-select2.png") no-repeat right #e9e9e9;
+}
+
+
+
+
+
+
+/* FLOATING LABELS */
+
+form.fp{
+  width: 100%;
+  margin: 0;
+  background-color: white;
+  -webkit-border-radius:14px;
+  -moz-border-radius:14px;
+  -ms-border-radius:14px;
+  -o-border-radius:14px;
+  border-radius:14px;
+}
+
+form.fp input, form.fp select, form.fp textarea {
+  color: #333;
+}
+
+.floating-placeholder, .floating-placeholder input, .floating-placeholder select, .floating-placeholder textarea {
+  font-size: 15pt;
+  line-height: 1.95em;
+  height: 1.95em;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.floating-placeholder input, .floating-placeholder select, .floating-placeholder textarea {
+  font-size: 15pt;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: transparent;
+  z-index: 2;
+  border-bottom: 1px solid #ccc;
+  text-indent: 20px;
+}
+
+.floating-placeholder input:disabled, .floating-placeholder select:disabled, .floating-placeholder textarea:disabled {
+  color: #999;
+}
+
+.floating-placeholder select {
+  text-indent: 16px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  display: inline-block;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  outline:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  -o-appearance:none;
+  appearance:none;
+}
+ 
+.floating-placeholder textarea:disabled {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  -o-appearance:none;
+  appearance:none;
+}
+
+.floating-placeholder input:focus + label, .floating-placeholder select:focus + label, .floating-placeholder textarea:focus + label {
+  color: blue;
+}
+
+.floating-placeholder input[value] + label, .floating-placeholder select[value] + label, .floating-placeholder textarea[value] + label {
+  color: purple;
+}
+
+.floating-placeholder {
+  position: relative;
+}
+
+.floating-placeholder:last-child {
+  border-bottom: none;
+}
+
+.floating-placeholder label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  font-size: 15pt;
+  z-index: 1;
+  -webkit-transform-origin: 0 0em;
+  -moz-transform-origin: 0 0em;
+  -ms-transform-origin: 0 0em;
+  -o-transform-origin: 0 0em;
+  transform-origin: 0 0em;
+  -webkit-transition: -webkit-transform 160ms, color 200ms;
+  -moz-transition: -moz-transform 160ms, color 200ms;
+  -ms-transition: -moz-transform 160ms, color 200ms;
+  -o-transition: -o-transform 160ms, color 200ms;
+  transition: transform 160ms, color 200ms;
+  -webkit-transform: scale(1, 1) rotateY(0);
+  -moz-transform: scale(1, 1) rotateY(0);
+  -ms-transform: scale(1, 1) rotateY(0);
+  -o-transform: scale(1, 1) rotateY(0);
+  transform: scale(1, 1) rotateY(0);
+  color: #999;
+}
+
+.floating-placeholder-float label {
+  -webkit-transform: scale(0.55, 0.55) rotateY(0);
+  -moz-transform: scale(0.55, 0.55) rotateY(0);
+  -ms-transform: scale(0.55, 0.55) rotateY(0);
+  -o-transform: scale(0.55, 0.55) rotateY(0);
+  transform: scale(0.55, 0.55) rotateY(0);
+}
+
+.floating-placeholder-float input, .floating-placeholder-float select, .floating-placeholder-float textarea {
+  line-height: 2.55em;
+}
+
+
+#containForm, .containForm {
+	/* background-color: pink !important; */
+}
+
+div.formitRadio {
+	color: #fff;
+	padding: .5em 0 0 0;
+	clear: both;
+}
+
+
+
+
+/* ==========================================================================
+   Display specific tweaks
+   DEFAULT: 981px - 1249px
+   ========================================================================== */
+
+/* HIRES DESKTOP */
+@media screen and (min-width: 1801px) and (max-width: 6000px){
+  div.form {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  div.formHolder {
+    padding: 2px 0;
+  }
+  
+  div.formLeft {
+    width: 40%;
+  }
+
+  div.formRight {
+    width: 58%;
+  }
+
+  .floating-placeholder, .floating-placeholder input, .floating-placeholder select, .floating-placeholder textarea {
+    font-size: 20pt;
+    line-height: 2.6em;
+    height: 2.6em;
+  }
+  
+  .floating-placeholder input, .floating-placeholder select, .floating-placeholder textarea {
+    font-size: 20pt;
+  }
+  
+  .floating-placeholder label {
+    font-size: 20pt;
+  }
+  
+  .floating-placeholder-float input, .floating-placeholder-float select, .floating-placeholder-float textarea {
+    line-height: 3.4em;
+  }
+
+  #containForm, .containForm {
+	  width: 1328px;
+  }
+}
+
+/* LARGE DESKTOP */
+@media screen and (min-width: 1250px) and (max-width: 1800px){
+  .floating-placeholder, .floating-placeholder input, .floating-placeholder select, .floating-placeholder textarea {
+    font-size: 20pt;
+    line-height: 2.6em;
+    height: 2.6em;
+  }
+  
+  .floating-placeholder input, .floating-placeholder select, .floating-placeholder textarea {
+    font-size: 20pt;
+  }
+  
+  .floating-placeholder label {
+    font-size: 20pt;
+  }
+  
+  .floating-placeholder-float input, .floating-placeholder-float select, .floating-placeholder-float textarea {
+    line-height: 3.4em;
+  }
+
+  #containForm, .containForm {
+	  width: 848px;
+  }
+}
+
+/* DEFAULT DESKTOP */
+@media screen and (min-width: 981px) and (max-width: 1249px){
+  #containForm, .containForm {
+	  width: 623px;
+  }
+}
+
+/* TABLET PORTRAIT */
+@media screen and (min-width: 768px) and (max-width: 980px){
+  div.form {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  div.formHolder {
+    padding: 2px 0;
+  }
+  
+  div.formLeft {
+    width: 30%;
+  }
+
+  div.formRight {
+    width: 68%;
+  }
+
+  #choicecard div.formLeft {
+    width: 50%;
+  }
+
+  #choicecard div.formRight {
+    width: 48%;
+  }
+
+  #containForm, .containForm {
+	  width: 385px;
+  }
+}
+
+/* HANDHELD LANDSCAPE */
+@media screen and (min-width: 480px) and (max-width: 767px){
+  .floating-placeholder, .floating-placeholder input, .floating-placeholder select, .floating-placeholder textarea {
+    font-size: 10pt;
+    line-height: 1.9em;
+    height: 1.9em;
+  }
+  
+  .floating-placeholder input, .floating-placeholder select, .floating-placeholder textarea {
+    font-size: 10pt;
+  }
+  
+  .floating-placeholder label {
+    font-size: 10pt;
+  }
+  
+  .floating-placeholder-float input, .floating-placeholder-float select, .floating-placeholder-float textarea {
+    line-height: 2.6em;
+  }
+}
+
+/* HANDHELD PORTRAIT */
+@media screen and (min-width: 0px) and (max-width: 479px){
+  div.form {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  div.formLeft {
+    width: 36%;
+  }
+
+  div.formRight {
+    width: 62%;
+  }
+
+  .floating-placeholder, .floating-placeholder input, .floating-placeholder select, .floating-placeholder textarea {
+    font-size: 10pt;
+    line-height: 1.9em;
+    height: 1.9em;
+  }
+  
+  .floating-placeholder input, .floating-placeholder select, .floating-placeholder textarea {
+    font-size: 10pt;
+  }
+  
+  .floating-placeholder label {
+    font-size: 10pt;
+  }
+  
+  .floating-placeholder-float input, .floating-placeholder-float select, .floating-placeholder-float textarea {
+    line-height: 2.6em;
+  }
+}
